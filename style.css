@@ -11,7 +11,6 @@ body{
 }
 
 .header{
-    /* text-decoration: none; */
     position: fixed;
     top: 0;
     left: 0;
@@ -34,13 +33,11 @@ body{
     opacity: 0;
     animation: slideTop 1s ease forwards;
     animation-delay: calc(.2s *var(--i));
-
 }
 
 .navbar a:hover,
 .navbar a.active{
     color: rgb(51, 116, 116);
-
 }
 
 .home{
@@ -55,8 +52,8 @@ body{
 
 .home-content{
     max-width: 600px;
-
 }
+
 .home-content h1{
     font-size: 56px;
     font-weight: 700;
@@ -72,20 +69,18 @@ body{
     opacity: 0;
     animation: slideBottom 1s ease forwards;
     animation-delay: .7s;
-    
 }
 
 .home-content h3:nth-of-type(2){
     margin-bottom: 30px;
     animation: slideTop 1s ease forwards;
     animation-delay: .7s;
-    
 }
 
 .home-content h3 span{
     color: rgb(40, 137, 158);
-    
 }
+
 .home-content p{
     font-weight: 400;
     font-size: 20px;
@@ -100,8 +95,8 @@ body{
     opacity: 0;
     animation: zoomIn 1s ease forwards;
     animation-delay: 1s;
-    border-radius: 50%; /* Makes the image round */
-    object-fit: cover; /* Ensures the image covers the area properly */
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .social-media a{
@@ -116,7 +111,7 @@ body{
     font-size: 20px;
     color: rgb(40, 137, 158);
     text-decoration: none;
-    box-shadow: 0 0  20px rgb(70, 156, 156);
+    box-shadow: 0 0 20px rgb(70, 156, 156);
     margin: 30px 14px 30px 0;
     transition: .5s ease;
     opacity: 0;
@@ -137,8 +132,8 @@ body{
     opacity: 0;
     animation :slideTop 1s ease forwards ;
     animation-delay: 2s;
-
 }
+
 /* About Page */
 .about {
     padding: 100px 10%;
@@ -146,6 +141,7 @@ body{
 }
 
 .about .section-title h2 {
+    color: rgb(40, 137, 158);
     font-size: 36px;
     margin-bottom: 30px;
 }
@@ -252,6 +248,69 @@ body{
 .contact-content button:hover {
     background-color: rgb(30, 120, 140);
 }
+
+/* Education Section */
+.education {
+    padding: 100px 10%;
+    background-color: #000000;
+    text-align: center;
+}
+
+.education .section-title h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: rgb(40, 137, 158);
+}
+
+.education-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.education-item h3 {
+    font-size: 28px;
+    margin-bottom: 5px;
+    color: rgb(51, 116, 116);
+}
+
+.education-item p {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+/* Projects Section */
+.projects {
+    padding: 100px 10%;
+    background-color: #000000;
+    text-align: center;
+}
+
+.projects .section-title h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: rgb(40, 137, 158);
+}
+
+.projects-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.project-item h3 {
+    font-size: 28px;
+    margin-bottom: 5px;
+    color: rgb(51, 116, 116);
+}
+
+.project-item p {
+    font-size: 20px;
+    color: #ffffff;
+}
+
 @keyframes slideLeft{
     0%{
         transform: translateX(100px);
@@ -283,7 +342,7 @@ body{
         transform: translateY(0);
         opacity: 1;
     }
-} 
+}
 
 @keyframes slideBottom{
     0%{
@@ -294,7 +353,7 @@ body{
         transform: translateY(0);
         opacity: 1;
     }
-} 
+}
 
 @keyframes zoomIn{
     0%{
